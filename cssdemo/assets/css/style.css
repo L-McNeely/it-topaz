@@ -1,3 +1,22 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 body{
-    background-color: lightcoral;
+    background-color: #D59DD5;
 }
+
+
+
+/*
+#D59DD5-light purple
+#CDC6AB-beige
+#805E80-dark purple
+#719A94-blue green
+#65807C-green
+*/
