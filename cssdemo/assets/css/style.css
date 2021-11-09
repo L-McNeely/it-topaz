@@ -7,11 +7,46 @@ html {
     box-sizing: inherit;
   }
 
-body{
-    background-color: #D59DD5;
+header.primary{
+
+    background-color:#e6ccae;
+    text-align: center;
+    color:#420b27;
+    text-shadow: 10px 20px 30px #00000000;
+    /*padding: 40px; /*
+    /* long form */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+
+    /* T,R,B,L */
+    /*padding: 40px 40px 40px 40px*/
+
+    /*Top/bottom  right/left */
+    /* padding: 20px 40px; */
+}
+
+header.primary h1{
+
+    font-size:2.8rem;
+    margin: 20px 0;
+}
+header.primary h1 a{
+    color;#420b27;
+}
+
+header.primary h2{
+    font-size: 2rem;
+    margin: 20px auto 40px;
 }
 
 
+body{
+    background-color: #7e5979;
+    font-family: 'Roboto'; sans-serif;
+    margin:0;
+}
 
 /*
 #D59DD5-light purple
