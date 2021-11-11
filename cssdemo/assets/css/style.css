@@ -41,6 +41,12 @@ header.primary h2{
     margin: 20px auto 40px;
 }
 
+header.primary nav{
+    background: red;
+    width: 70vw;
+    margin: 20px auto;
+
+}
 
 body{
     background-color: #7e5979;
