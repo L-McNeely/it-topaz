@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <meta charset="utf-8">
+    <title>New Patient Registration</title>
+    <meta name="description" content="SubmitExampleForm" />
+    <meta name="author" content="Lillian McNeely" />
 
 
 </head>
 
 <body>
     <h1>New Patient Registration</h1>
-    <h3>Please fill out the form below</h3>
+    <h4>Please fill out the form below</h4>
+    
     <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
-    <label for="Name">Name: </label>
-    <input type="text" id="Name" name="Name" size="30" maxlength="10">
+    <label for="fname"> First Name: </label>
+    <input type="text" id="Name" name="Name" size="30" maxlength="30">
     </form>
+    <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+        <label for="minitial"> Middle Initial: </label>
+        <input type="text" id="Name" name="Name" size="1" maxlength="1">
+        </form>
+    <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+        <label for="lname"> Last Name: </label>
+        <input type="text" id="Name" name="Name" size="30" maxlength="30">
+    </form>
+    <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+        <label for="Email"> Email </label>
+        <input type="text" id="Name" name="Name" size="30" maxlength="30">
+        </form>
+     <form id="RadioExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+            <label>Sex: </label>
+            <label for="M"><input type="radio" name="sex" id="M" value="M">Male</label>
+            <label for="F"><input type="radio" name="sex" id="F" value="F">Female</label>
+            <label for="N"><input type="radio" name="sex" id="N" value="N">N/A</label>
+            </form>
+    <form id="SubmitExampleForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+                <label for="birthday"> Birthday </label>
+                <input type="text" id="Name" name="Name" size="8" maxlength="8">
+                </form>        
+
+
 </body>
