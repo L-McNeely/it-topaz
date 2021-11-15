@@ -1,15 +1,7 @@
-.fname {
+body {
     display: inline-block;
-    width: 150px;
-    text-align: right;
+    width: 300px;
     padding: 5px;
     font-weight: bold;
-}
-
-.minitial{
-    display: inline-block;
-    width: 150px;
-    text-align: right;
-    padding: 5px;
-    font-weight: bold;
+    margin-left: 50px;
 }
