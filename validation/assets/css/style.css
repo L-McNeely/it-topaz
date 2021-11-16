@@ -1,6 +1,7 @@
-body {
+.formlabel {
     display: inline-block;
-    width: 300px;
+    width: 150px;
+    text-align: right;
     padding: 5px;
     font-weight: bold;
 }
