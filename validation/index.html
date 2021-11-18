@@ -14,7 +14,9 @@
     <h1>New Patient Registration</h1>
     <h4>Please fill out the form below</h4>
     <label class="formlabel" for="fname"> First Name: </label>
-    <input type="text" id="fname" name="firstName" size="30" maxlength="30">
+    <input type="text" id="fname" name="firstName" size="30" maxlength="30"
+       data-rule-required="true"  data-msg-required="First Name is Required" >
+       <label for="FirstName" class="error"></label>
     <br>
     <label class="formlabel" for="middle"> Middle Initial: </label>
     <input type="text" id="middle" name="Middle" size="1" maxlength="1">
@@ -121,6 +123,10 @@
     <br><br>
     <input type="submit" value="Submit Patient Form">
     </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+
 </body>
 
 
