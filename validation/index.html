@@ -22,12 +22,18 @@
     <input type="text" id="middle" name="Middle" size="1" maxlength="1">
     <br>
     <label class="formlabel" for="lname"> Last Name: </label>
-    <input type="text" id="lname" name="last" size="30" maxlength="30">
+    <input type="text" id="lname" name="last" size="30" maxlength="30"
+    data-rule-required="true"  data-msg-required="Last Name is Required" >
+    <label for="LastName" class="error"></label>
    	<br>
     <label class="formlabel" for="email"> Email: </label>
-    <input type="text" id="email" name="email" size="30" maxlength="30">
+    <input type="text" id="email" name="email" size="30" maxlength="30"
+    data-rule-required="true"  data-msg-required="Email is Required" >
+<label for="email" class="error"></label>
     <br>
             <label class="formlabel" > Sex: </label>
+            <select id="formlabel" name="formlabel"
+        data-rule-required="true" data-msg-required="Sex is Required">
             <label for="Male"><input type="radio" name="sex" id="Male" value="M">Male</label>
             <label for="Female"><input type="radio" name="sex" id="Female" value="F">Female</label>
             <label for="Na"><input type="radio" name="sex" id="Na" value="N">N/A</label>
@@ -126,6 +132,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+<script>
+    $( "#NewPatientRegistration" ).validate({
+    
+    });
+    </script>
 
 </body>
 
