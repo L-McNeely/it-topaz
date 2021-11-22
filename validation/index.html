@@ -32,23 +32,21 @@
 <label for="email" class="error"></label>
     <br>
             <label class="formlabel" > Sex: </label>
-            <select id="formlabel" name="formlabel"
-        data-rule-required="true" data-msg-required="Sex is Required">
-            <label for="Male"><input type="radio" name="sex" id="Male" value="M">Male</label>
+            <label for="Male"><input type="radio" name="sex" id="Male" value="M" data-rule-required="true" data-msg-required="Sex is Required" />Male</label>>
             <label for="Female"><input type="radio" name="sex" id="Female" value="F">Female</label>
             <label for="Na"><input type="radio" name="sex" id="Na" value="N">N/A</label>
     <br>
     <label class="formlabel" for="birthday"> Birthday: </label>
-    <input type="text" id="birthday" name="birthday" size="8" maxlength="8">
+    <input type="text" id="birthday" name="birthday" size="8" maxlength="8" data-rule-required="true" data-rule-date="true" data-msg-required="Birth Date is Required">
     <br>
     <label class="formlabel" for="height"> Height: </label>
-    <input type="text" id="height" name="height" size="3" maxlength="3">
+    <input type="text" id="height" name="height" size="3" maxlength="3" data-rule-required="true" data-rule-number="true" data-rule-minlength="3" data-rule-maxlength="120" data-msg-required="Height is Required">
     <br>
      <label class="formlabel" for="weight"> Weight: </label>
-    <input type="text" id="weight" name="weight" size="8" maxlength="8">
+    <input type="text" id="weight" name="weight" size="8" maxlength="8" data-rule-required="true" data-rule-number="true" data-rule-minlength="3" data-rule-maxlength="500" data-msg-required="Weight is Required">
     <br>
     <label class="formlabel" for="phone"> Phone Number: </label>
-     <input type="text" id="phone" name="phone" size="14" maxlength="14">
+     <input type="text" id="phone" name="phone" size="14" maxlength="14" data-rule-required="true" data-rule-phoneUS="true"  data-msg-required="Phone Number is Required" >
      <br>
     <label class="formlabel">Marrital Status: </label>
         <select name="Marrage" id="Marrage">
@@ -61,11 +59,12 @@
         </select>
     <br>
      <label class="formlabel" for="Address">Address: </label>
-    <input type="text" id="Address" name="Address">
+    <input type="text" id="Address" name="Address" data-rule-required="true"  data-msg-required="Address is Required" >
      <br>
      <label class="formlabel" for="city"> City/State/Zip:: </label>
-     <input type="text" id="city" name="city" size="30" maxlength="30">
-        <select name="state" id="state">
+     <input type="text" id="city" name="city" size="30" maxlength="30"data-rule-required="true"  data-msg-required="City is Required" >
+        <select name="state" id="state"
+        data-rule-required="true" data-msg-required="State is Required">
             <option value="AL">Alabama</option>
 	        <option value="AK">Alaska</option>
 	        <option value="AZ">Arizona</option>
@@ -118,10 +117,10 @@
 	        <option value="WI">Wisconsin</option>
 	        <option value="WY">Wyoming</option>
             </select>				
-    <input type="text" id="Zip" name="Zip" size="8" maxlength="8">
+    <input type="text" id="Zip" name="Zip" size="8" maxlength="8" data-rule-required="true" data-rule-minlength="5" data-msg-required="Zip Code is Required">
     <br>
     <label class="formlabel">Taking Medications: </label>
-    <label for="Yes"><input type="radio" name="Yes" id="Yes" value="Y">Yes</label>
+    <label for="Yes"><input type="radio" name="Yes" id="Yes" value="Y" data-rule-required="true" data-msg-required="Medications are Required" />Yes</label>
     <label for="No"><input type="radio" name="No" id="No" value="N">No</label>
      <br>
      <label class="formlabel">If yes, list medications here:</label>
