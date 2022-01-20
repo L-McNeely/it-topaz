@@ -23,6 +23,28 @@ html {
 
 }
 
+.img-right{
+    float:right;
+    padding:5px;
+    border:1px solid #c0c0c0;
+    margin:10px 0 10px 20px;
+}
+
+.img-center{
+    display: block;
+    padding:5px;
+    border:1px solid #c0c0c0;
+    margin:10px 0 10px 20px;
+}
+
+.img-left{
+    float:left;
+    padding:5px;
+    border:1px solid #c0c0c0;
+    margin:10px 0 10px 20px;
+}
+
+
 /*-------global styles---------*/
 
 header.primary{
@@ -120,6 +142,10 @@ border-bottom: 5px double black;
     padding-bottom: 2.5rem;
 }
 
+#additional-elements{
+    padding: 2.5rem;
+}
+
 article.post{
     width:30%;
     box-shadow:0 4px 8px rgba(0,0,0,.4);
@@ -177,6 +203,30 @@ body aside .container article A:link{
 
 aside article footer{
     display: none;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+ }
+tr:nth-child(odd){
+    background-color: violet;
+}
+th{
+    background-color: blueviolet;
+    color: wheat;
+    padding: 8px;
+
+}
+td{
+    border:1px solid black;
+    padding: 4px;
+    text-align: right;
+    width: 33.3%;
+}
+td:nth-child(3n+1){
+    text-align: left;
 }
 
 
