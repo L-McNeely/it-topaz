@@ -226,7 +226,90 @@ body aside .container article A:link{
 aside article footer{
     display: none;
 }
+dl{
+    color: #7e5979;
+    background: wheat;
+    position: relative;
+    width: 300px;
+    margin: 25px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: #7e5979 double 5px;
+}
 
+dl li{
+    display: flex;
+    background: saddlebrown;
+    padding: 10px 20px;
+    color: whitesmoke;
+    margin: 5px 0;
+    transition: .5s;
+    font-weight: bold;
+}
+
+dl:nth-child(odd){
+    background: brown;
+}
+ol{
+    color: red;
+    position: relative;
+    width: 300px;
+    margin: 25px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: black double 5px;
+}
+
+ol li{
+    display: flex;
+    background: saddlebrown;
+    padding: 10px 20px;
+    color: whitesmoke;
+    margin: 5px 0;
+    transition: .5s;
+    font-weight: bold;
+}
+
+ol li:nth-child(odd){
+    background: brown;
+}
+
+.food{
+  position: relative;
+    width: 300px;
+    margin: 25px auto 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: saddlebrown double 5px;
+}
+
+.food li{
+    display: flex;
+    background: #420b27;
+    padding: 10px 20px;
+    color: whitesmoke;
+    margin: 5px 0;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.food li:nth-child(odd){
+    background: #7e5979;
+}
+.food li:nth-child(4){
+    border: saddlebrown double 5px;
+} 
+.food li:nth-child(3){
+    border: saddlebrown double 5px;
+}
+
+.food li:nth-child(2){
+    border: saddlebrown double 5px;
+}
+
+.food li:nth-child(1){
+    border: saddlebrown double 5px;
+}
 table{
     width: 100%;
     border-collapse: collapse;
