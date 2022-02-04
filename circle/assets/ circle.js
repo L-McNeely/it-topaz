@@ -61,7 +61,6 @@ function clearForm()
             document.getElementById("area").innerHTML = "";
         }
 
-
 $( "#CircleForm" ).validate({
 
 });
