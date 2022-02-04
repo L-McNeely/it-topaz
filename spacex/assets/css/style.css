@@ -1,0 +1,64 @@
+
+
+
+
+
+/*----global styles-----*/
+header.primary{
+
+    background-color:#e6ccae;
+background-image: url("https://cdn.vox-cdn.com/thumbor/xogh-sz8Gv6Vm410n_t0OhEmqhE=/0x0:3000x2250/1200x800/filters:focal(0x0:3000x2250)/cdn.vox-cdn.com/uploads/chorus_image/image/45186602/CRS-4_Launch.0.0.jpeg");
+    text-align: center;
+    color:whitesmoke;
+    text-shadow: 10px 20px 30px #00000000;
+    /*padding: 40px; /*
+    /* long form */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;}
+   
+header.primary h1 a{
+       color: rgb(240, 163, 48);
+}
+    
+ header.primary h2{
+        font-size: 2rem;
+        margin: 20px auto 40px;
+    }
+
+    header.primary nav{
+        width: 70vw;
+        margin: 20px auto;
+        max-width: 900px;
+    }
+    
+    header.primary nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+    
+    }
+    
+    header.primary nav ul li{
+        list-style-type: none;
+        margin-bottom: 30px;
+    }
+    
+    header.primary nav ul li a:link, header.primary nav ul li a:visited{
+    color: white;
+    text-decoration: none;
+    background-color: rgba(0,0,0,.4);
+    /*background-color:black ; */
+    /* opacity- all transparent */
+    transition: .5s;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid rgb(240, 163, 48);
+    }
+    
+    header.primary nav ul li a:hover, header.primary nav ul li a:active{
+        background-color: rgba(0,0,0,.8);
+    }
+    
