@@ -31,12 +31,36 @@ p, h1, h2, h3, dd, dt {
   color: white;
 }
 
+h3{
+  font-size: x-large;
+  font-style: oblique;
+  border-bottom: #F2DD63 double 5px;
+}
+
+h2{
+  font-size: x-large;
+  font-style: oblique;
+}
+
+#logo{
+  max-width: 50%;
+  height: 50%;
+}
+#thing{
+  max-width: 50%;
+  height: 50%;
+  display: block;
+  padding:5px;
+  border:1px double goldenrod;
+  margin:10px 0 10px 20px;
+}
+
 .primary ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow:hidden;
-    background-color: #2E3D59;
+    background-color: goldenrod;
 
 }
 
@@ -46,20 +70,20 @@ p, h1, h2, h3, dd, dt {
 
 .primary li a{
   display: block;
-  color: white;
+  color: #0C2F70;
   text-align: center;
   padding: 14px 16px;
   text-decoration: double;
 }
 
 .primary li a:hover {
-  background-color: goldenrod;
+  background-color: #F2DD63;
 }
 
 header.primary{
-  background-color:#2E3D59;
+  background-color:;
   text-align: left;
-  color:#420b27;
-  text-shadow: 10px 20px 30px #00000000;
+  color:;
+  text-shadow: 10px 20px 30px yellow;
 
 /* colors, #5833A6, #8679D9, #2E3D59, #141A26, #0D0D0D*/
