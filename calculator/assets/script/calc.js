@@ -69,5 +69,3 @@ function clearform() {
 $( "#myform" ).validate({
  
 });
-
-}
