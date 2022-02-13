@@ -1,5 +1,5 @@
 function calculate() {
-    if ($( "#myform" ).valid()) {
+    if ($( "#calcform" ).valid()) {
 
         var operand1 = document.getElementById("Operand1").value;
         var operand2 = document.getElementById("Operand2").value;
@@ -66,6 +66,6 @@ function clearform() {
     document.getElementById("Result").innerHTML = "";
 }
 
-$( "#myform" ).validate({
+$( "#calcform" ).validate({
  
 });

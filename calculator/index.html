@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 <body>
-<form id="myform">
+<form id="calcform">
     <div class="formcontainer" onsubmit="return false">
         <h1>Minimum, Maximum, and Average</h1>
         <fieldset id="detail">
@@ -58,7 +58,7 @@
             <span id="Result"></span>
             <br><br>
 
-            <input type="submit" value="Calculate" id="btnSubmit" onclick="myform()">
+            <input type="submit" value="Calculate" id="btnSubmit" onclick="calcform()">
             <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
         </fieldset>
     </div>
