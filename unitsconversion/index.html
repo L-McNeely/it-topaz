@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="name">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" type="text/css" href="add css">
+
+</head>
+<body>
+    <form id="myform" onsubmit="return false">
+        <div class="formcontainer" onsubmit="return false">
+            <h1>Javascript Units Conversion</h1>
+            <fieldset id="detail">
+                <legend>Units Conversion</legend>  
+                <br>
+                
+                <label class="formlabel" for="value1">Value: </label>
+                <input type="text" id="value1" name="value1" size="15" maxlength="15"
+                        data-rule-required="true"  data-msg-required="Value is Required" 
+                        data-rule-number="true" data-msg-number="Value must be a Number">
+                <label for="value1" class="error" id="valueMsg"></label>
+                <br><br>
+
+
+                <label class="formlabel">From Unit: </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="fromunit" value = "cm"
+                           data-rule-required="true" data-msg-required="unit selection is Required" />cm
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="meter" value = "m">m
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="kmeter" value = "km">km
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="inch" value = "in">in
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="feet" value = "ft">ft
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="yard" value = "yd">yd
+                </label>
+                <label for="fromunit">
+                    <input type="radio" name="funit" id="miles" value = "mi">mi
+                </label>
+            <label for="funit" class="error" id="funitMsg"></label>
+            <br><br>
+
+
+            <label class="formlabel">To Unit: </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="tounit" value = "cm"
+                       data-rule-required="true" data-msg-required="unit selection is Required" />cm
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="meter" value = "m">m
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="kmeter" value = "km">km
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="inch" value = "in">in
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="feet" value = "ft">ft
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="yard" value = "yd">yd
+            </label>
+            <label for="tounit">
+                <input type="radio" name="tunit" id="miles" value = "mi">mi
+            </label>
+        <label for="tunit" class="error" id="tunitMsg"></label>
+        <br><br>
+
+
+        <label class="formlabel">Result: </label>
+        <span id="Result"></span>
+        <br><br>
+
+            <input type="submit" value="Calculate" id="btnSubmit" onclick="calculate()">
+            <input type="submit" value="Clear" id="btnClear" onclick="clearForm()" formnovalidate>
+        </fieldset>
+    </div>
+</form>
