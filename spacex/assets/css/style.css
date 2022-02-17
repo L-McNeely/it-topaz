@@ -24,7 +24,7 @@ img{
 /*----global styles-----*/
 
 body {
-  background-color: black;
+    background-image: linear-gradient(black, #2F2536, #BDBDFF);
 }
 
 p, h1, h2, h3, dd, dt {
@@ -34,7 +34,7 @@ p, h1, h2, h3, dd, dt {
 h3{
   font-size: x-large;
   font-style: oblique;
-  border-bottom: #F2DD63 double 5px;
+  border-bottom: #BDBDFF double 5px;
 }
 
 h2{
@@ -51,7 +51,7 @@ h2{
   height: 50%;
   display: block;
   padding:5px;
-  border:1px double goldenrod;
+  border:1px double #BDBDFF;
   margin:10px 0 10px 20px;
 }
 
@@ -60,7 +60,7 @@ h2{
     margin: 0;
     padding: 0;
     overflow:hidden;
-    background-color: goldenrod;
+    background-color: #919191;
 
 }
 
@@ -77,13 +77,13 @@ h2{
 }
 
 .primary li a:hover {
-  background-color: #F2DD63;
+  background-color: #BDBDFF;
 }
 
 header.primary{
   background-color:;
   text-align: left;
   color:;
-  text-shadow: 10px 20px 30px yellow;
+}
 
 /* colors, #5833A6, #8679D9, #2E3D59, #141A26, #0D0D0D*/
