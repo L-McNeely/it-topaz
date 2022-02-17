@@ -18,13 +18,13 @@ img{
     width: 70vw;
     max-width: 900px;
     margin: 40px auto;
-
 }
 
 /*----global styles-----*/
 
 body {
     background-image: linear-gradient(black, #2F2536, #BDBDFF);
+    font-family: 'Roboto'; sans-serif;
 }
 
 p, h1, h2, h3, dd, dt {
@@ -51,7 +51,6 @@ h2{
   height: 50%;
   display: block;
   padding:5px;
-  border:1px double #BDBDFF;
   margin:10px 0 10px 20px;
 }
 
