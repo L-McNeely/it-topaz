@@ -34,7 +34,6 @@ p, h1, h2, h3, dd, dt {
 h3{
   font-size: x-large;
   font-style: oblique;
-  border-bottom: #BDBDFF double 5px;
 }
 
 h2{
@@ -46,12 +45,18 @@ h2{
   max-width: 50%;
   height: 50%;
 }
+
 #thing{
-  max-width: 50%;
-  height: 50%;
-  display: block;
+  max-width: 60%;
+  height: 60%;
   padding:5px;
-  margin:10px 0 10px 20px;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .primary ul{
@@ -80,8 +85,15 @@ h2{
 }
 
 header.primary{
-  background-color:;
+  background-image: url("https://icdn.digitaltrends.com/image/digitaltrends/spacex-launches-falcon-9-rocket-vandenberg-air-force-base-1.jpg");
   text-align: left;
 }
+
+img:hover {
+  transform: scaleX(-1);
+}
+
+
+
 
 /* colors, #2F2536, #BDBDFF, #FAF5F8, #919191, #1F1F1F*/
