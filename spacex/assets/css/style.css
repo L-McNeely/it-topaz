@@ -23,12 +23,12 @@ img{
 /*----global styles-----*/
 
 body {
-    background-image: linear-gradient(black, #2F2536, #BDBDFF);
+    background-image: linear-gradient(black, #2F2536, #9f9fda);
     font-family: 'Roboto'; sans-serif;
 }
 
 p, h1, h2, h3, dd, dt {
-  color: white;
+  color: whitesmoke;
 }
 
 h3{
