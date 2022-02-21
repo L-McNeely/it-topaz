@@ -7,13 +7,10 @@
     <meta name="author" content="name">
     <title>JavaScript Calculator</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 
 </head>
 <body>
-    <form id="myform" onsubmit="return false">
+    <form id="calcform" onsubmit="return false">
         <div class="formcontainer" onsubmit="return false">
             <h1>Javascript Units Conversion</h1>
             <fieldset id="detail">
@@ -30,7 +27,7 @@
 
                 <label class="formlabel">From Unit: </label>
                 <label for="fromunit">
-                    <input type="radio" name="funit" id="fromunit" value = "cm"
+                    <input type="radio" name="funit" id="centi" value = "cm"
                            data-rule-required="true" data-msg-required="unit selection is Required" />cm
                 </label>
                 <label for="fromunit">
@@ -57,26 +54,26 @@
 
             <label class="formlabel">To Unit: </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="tounit" value = "cm"
+                <input type="radio" name="tunit" id="centi2" value = "cm"
                        data-rule-required="true" data-msg-required="unit selection is Required" />cm
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="meter" value = "m">m
+                <input type="radio" name="tunit" id="meter2" value = "m">m
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="kmeter" value = "km">km
+                <input type="radio" name="tunit" id="kmeter2" value = "km">km
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="inch" value = "in">in
+                <input type="radio" name="tunit" id="inch2" value = "in">in
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="feet" value = "ft">ft
+                <input type="radio" name="tunit" id="feet2" value = "ft">ft
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="yard" value = "yd">yd
+                <input type="radio" name="tunit" id="yard2" value = "yd">yd
             </label>
             <label for="tounit">
-                <input type="radio" name="tunit" id="miles" value = "mi">mi
+                <input type="radio" name="tunit" id="miles2" value = "mi">mi
             </label>
         <label for="tunit" class="error" id="tunitMsg"></label>
         <br><br>
@@ -92,7 +89,9 @@
     </div>
 </form>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 <script src="assets/script/script.js"></script>
 </body>
 </html>
