@@ -29,7 +29,6 @@ body {
 
 h1, h2, h3 {
   color: rgb(174, 180, 236);
-  text-shadow: 0 0 3px #FF0000, 0 0 25px #0000FF;
   text-align: center;
 }
 #rev {
@@ -40,7 +39,6 @@ p, dd, dt {
 }
 
 dt{
-  text-shadow: 0 0 3px #faf7f7, 0 0 5px #0000FF;
   text-decoration-line: underline;
 text-decoration-style: dotted;}
 h3{
