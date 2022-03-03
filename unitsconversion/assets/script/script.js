@@ -1,7 +1,7 @@
 function calculate() {
-    if ($( "#calcform" ).valid()) {
-
-        if (form.valid()) {
+    "use strict";
+    var form = $( "#calcform" );
+    if (form.valid()) {
 
             var value1 = document.getElementById("value1").value;
             var funit;
@@ -54,8 +54,9 @@ function calculate() {
             CalculateResult(value1, funit, tunit);
         }
     }
+}
     
-    async function CalculateResult(operand1, operator, operand2) {
+    async function CalculateResult(value1, funit, tunit) {
         var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
         myURL = myURL + "?value1=" + encodeURIComponent(value1) + "&funit=" + encodeURIComponent(funit) + "&tunit=" + encodeURIComponent(tunit);
         let myCalcObject = await fetch(myURL);
