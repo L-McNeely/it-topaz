@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="currencyvalue">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Bruce Bauer">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</head>
+<body>
+    <body>
+        <form id="curform">
+            <div class="formcontainer">
+                <h2>Stock Ticker Details</h2>
+                <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
+                <!--<label for="DisplayStock" class="formlabel" ></label>-->
+                <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
+                        data-rule-required="true"  data-msg-required="Value is Required">
+                <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
+                <label class="formlabel">From Date:</label>
+                <input type="date" name="FromDate" id="FromDate" 
+                    data-rule-required="true" data-msg-required="From Date is Required">
+                <label id="FromDateError" for="FromDate" class="error"></label>
+                <label class="formlabel">To Date:</label>
+                <input type="date" name="ToDate" id="ToDate" 
+                     data-rule-required="true" data-msg-required="To Date is Required">
+                <label id="ToDateError" for="ToDate" class="error"></label>
+                <br><br>
+                <input type="button" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+                <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+                <hr>
+                </form>
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="assets/script/calc.js"></script>
+</body>
+</html>
+
+
+
+
