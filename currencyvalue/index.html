@@ -12,25 +12,39 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 <body>
-    <body>
         <form id="curform">
             <div class="formcontainer">
-                <h2>Stock Ticker Details</h2>
-                <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
-                <!--<label for="DisplayStock" class="formlabel" ></label>-->
-                <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
-                        data-rule-required="true"  data-msg-required="Value is Required">
-                <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
+                <h2>Currency Value History</h2>
+                <br>
+                <form action="/action_page.php">
+                    <label class="formlabel">Base Currency:</label>
+                    <select name="bac" id="bac">
+                      <option value="usd">US Dollar</option>
+                      <option value="pound">Great Britian Pound</option>
+                      <option value="yen">Japanese Yen</option>
+                      <option value="ruble">Russian ruble</option>
+                    </select>
+                    <br>
+                    <form action="/action_page.php">
+                        <label class="formlabel">Convert to:</label>
+                        <select name="ccur" id="Ccur">
+                          <option value="usd">US Dollar</option>
+                          <option value="pound">Great Britian Pound</option>
+                          <option value="yen">Japanese Yen</option>
+                          <option value="ruble">Russian ruble</option>
+                        </select>
+                        <br>
                 <label class="formlabel">From Date:</label>
                 <input type="date" name="FromDate" id="FromDate" 
                     data-rule-required="true" data-msg-required="From Date is Required">
                 <label id="FromDateError" for="FromDate" class="error"></label>
+                <br>
                 <label class="formlabel">To Date:</label>
                 <input type="date" name="ToDate" id="ToDate" 
                      data-rule-required="true" data-msg-required="To Date is Required">
                 <label id="ToDateError" for="ToDate" class="error"></label>
                 <br><br>
-                <input type="button" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+                <input type="button" value="Show" id="Show" name="Show" onclick="Show();">
                 <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
                 <hr>
                 </form>
@@ -39,10 +53,6 @@
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
         <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script src="assets/script/calc.js"></script>
+        <script src="assets/script/calc.js"></script>
 </body>
 </html>
-
-
-
-
