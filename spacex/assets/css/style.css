@@ -27,6 +27,11 @@ body {
     font-family: 'Roboto'; sans-serif;
 }
 
+dd{
+ padding: 15px;
+
+}
+
 h1, h2, h3 {
   color: rgb(174, 180, 236);
   text-align: center;
