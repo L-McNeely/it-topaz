@@ -1,4 +1,54 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="marsrover">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Bruce Bauer">
+    <title>Mars Rover</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+</head>
+  <body>
+    <form id="myform">
+      <div class="formcontainer">
+          <h1>Mars Rover Photo Expolorer</h1>
+          <br>
+          <form action="/action_page.php">
+    <table>
+      <tr>
+        <th>Rover</th>
+        <th>Mission Start</th>
+        <th>Mission End</th>
+      </tr>
+      <tr>
+        <td>Curiosity</td>
+        <td>08/06/2012</td>
+        <td>09/28/19</td>
+      </tr>
+      <tr>
+        <td>Opportunity</td>
+        <td>01/26/2004</td>
+        <td>06/11/2018</td>
+      </tr>
+      <tr>
+        <td>Spirit</td>
+        <td>01/05/2004</td>
+        <td>03/21/2004</td>
+      </tr>
+    </table>
+    <h2>Select a Rover and Picture Date</h2>
+    <br>
+    <label class="formlabel" > Rover: </label>
+    <label for="Male"><input type="radio" name="rover" id="curiosity" value="curiosity data-rule-required="true" data-msg-required="Rover is Required" /> Curiosity</label>>
+    <label for="Female"><input type="radio" name="rover" id="opportunity" value="opportunity">Opportunity</label>
+    <label for="Na"><input type="radio" name="rover" id="spirit" value="spirit">Spirit</label>
+<br>
+<label class="formlabel">Picture Date:</label>
+<input type="date" name="Date" id="Date" 
+    data-rule-required="true" data-msg-required=" Date is Required">
+<label id="DateError" for="Date" class="error"></label>
+<br>
+  </body>
