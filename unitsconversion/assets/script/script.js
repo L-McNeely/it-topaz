@@ -3,62 +3,61 @@ function calculate() {
     var form = $( "#calcform" );
     if (form.valid()) {
 
-            var value1 = document.getElementById("value1").value;
-            var funit;
-            if (document.getElementById("centi").checked) {
-                operator = document.getElementById("centi").value;
-            }
-            if (document.getElementById("meter").checked) {
-                operator = document.getElementById("meter").value;
-            }
-            if (document.getElementById("kmeter").checked) {
-                operator = document.getElementById("kmeter").value;
-            }
-            if (document.getElementById("inch").checked) {
-                operator = document.getElementById("inch").value;
-            }
-            if (document.getElementById("feet").checked) {
-                operator = document.getElementById("feet").value;
-            }
-            if (document.getElementById("yard").checked) {
-                operator = document.getElementById("yard").value;
-            }
-            if (document.getElementById("miles").checked) {
-                operator = document.getElementById("miles").value;
-            }
-
-            var tunit;
-            if (document.getElementById("centi").checked) {
-                operator = document.getElementById("centi").value;
-            }
-            if (document.getElementById("meter").checked) {
-                operator = document.getElementById("meter").value;
-            }
-            if (document.getElementById("kmeter").checked) {
-                operator = document.getElementById("kmeter").value;
-            }
-            if (document.getElementById("inch").checked) {
-                operator = document.getElementById("inch").value;
-            }
-            if (document.getElementById("feet").checked) {
-                operator = document.getElementById("feet").value;
-            }
-            if (document.getElementById("yard").checked) {
-                operator = document.getElementById("yard").value;
-            }
-            if (document.getElementById("miles").checked) {
-                operator = document.getElementById("miles").value;
-            }
-
-
-            CalculateResult(value1, funit, tunit);
+        var value1 = document.getElementById("value1").value;
+        var funit;
+        var operator;
+        if (document.getElementById("centi").checked) {
+            funit = document.getElementById("centi").value;
         }
+        if (document.getElementById("meter").checked) {
+            funit = document.getElementById("meter").value;
+        }
+        if (document.getElementById("kmeter").checked) {
+            funit = document.getElementById("kmeter").value;
+        }
+        if (document.getElementById("inch").checked) {
+            funit = document.getElementById("inch").value;
+        }
+        if (document.getElementById("feet").checked) {
+            funit = document.getElementById("feet").value;
+        }
+        if (document.getElementById("yard").checked) {
+            funit = document.getElementById("yard").value;
+        }
+        if (document.getElementById("miles").checked) {
+            funit = document.getElementById("miles").value;
+        }
+
+        var tunit;
+        if (document.getElementById("centi2").checked) {
+            tunit = document.getElementById("centi2").value;
+        }
+        if (document.getElementById("meter2").checked) {
+            tunit = document.getElementById("meter2").value;
+        }
+        if (document.getElementById("kmeter2").checked) {
+            tunit = document.getElementById("kmeter2").value;
+        }
+        if (document.getElementById("inch2").checked) {
+            tunit = document.getElementById("inch2").value;
+        }
+        if (document.getElementById("feet2").checked) {
+            tunit = document.getElementById("feet2").value;
+        }
+        if (document.getElementById("yard2").checked) {
+            tunit = document.getElementById("yard2").value;
+        }
+        if (document.getElementById("miles2").checked) {
+            tunit = document.getElementById("miles2").value;
+        }
+        
+        CalculateResult(value1, funit, tunit);
     }
 }
     
     async function CalculateResult(value1, funit, tunit) {
         var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
-        myURL = myURL + "?value1=" + encodeURIComponent(value1) + "&funit=" + encodeURIComponent(funit) + "&tunit=" + encodeURIComponent(tunit);
+        myURL = myURL + "?FromValue=" + encodeURIComponent(value1) + "&FromUnit=" + encodeURIComponent(funit) + "&ToUnit=" + encodeURIComponent(tunit);
         let myCalcObject = await fetch(myURL);
         let myResult = await myCalcObject.text();
         
