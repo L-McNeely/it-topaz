@@ -7,28 +7,25 @@
     <meta name="author" content="Bruce Bauer">
     <title>Currency Value</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 <body>
-        <form id="curform">
+        <form id="curform" onsubmit="return false">
                 <h2>Currency Value History</h2>
                 <br>
                     <label class="formlabel">Base Currency:</label>
-                    <select name="bac" id="bac">
-                      <option value="usd">US Dollar</option>
-                      <option value="pound">Great Britian Pound</option>
-                      <option value="yen">Japanese Yen</option>
-                      <option value="ruble">Russian ruble</option>
+                    <select name="Bcur" id="Bcur">
+                      <option value="USD">US Dollar</option>
+                      <option value="GBP">Great Britian Pound</option>
+                      <option value="JPY">Japanese Yen</option>
+                      <option value="RUB">Russian ruble</option>
                     </select>
                     <br>
                         <label class="formlabel">Convert to:</label>
-                        <select name="ccur" id="Ccur">
-                          <option value="usd">US Dollar</option>
-                          <option value="pound">Great Britian Pound</option>
-                          <option value="yen">Japanese Yen</option>
-                          <option value="ruble">Russian ruble</option>
+                        <select name="Ccur" id="Ccur">
+                          <option value="USD">US Dollar</option>
+                          <option value="GBP">Great Britian Pound</option>
+                          <option value="JPY">Japanese Yen</option>
+                          <option value="RUB">Russian ruble</option>
                         </select>
                         <br>
                 <label class="formlabel">From Date:</label>
@@ -41,9 +38,12 @@
                      data-rule-required="true" data-msg-required="To Date is Required">
                 <label id="ToDateError" for="ToDate" class="error"></label>
                 <br><br>
-                <input type="submit" value="show" id="show" name="show" onclick="show();">
-                <input type="submit" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+                <button onclick="show();">Show</button>
+                <button onclick="ClearForm();">Clear</button>
                 <hr>
+
+                <canvas id="chartjs-0" width="400" height="400"></canvas>
+
                 </form>
                 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
