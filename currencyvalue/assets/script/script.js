@@ -1,4 +1,4 @@
-  async function Show() {
+  async function show() {
     "use strict";
     var form = $("#curform");
         form.validate();
