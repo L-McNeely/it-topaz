@@ -12,7 +12,8 @@ async function show() {
   
 
       /*var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + StockSymbol + "/company?apiKey=" + apiKey; */
-      var myURL1 = "https://api.polygon.io/v2/aggs/ticker/C:" + FromCurrency + ToCurrency + "/range/1/day/" + FromDate +"/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;
+     /* var myURL1 = "https://api.polygon.io/v2/aggs/ticker/C:" + FromCurrency + ToCurrency + "/range/1/day/" + FromDate +"/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;*/
+     var myURL1= "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?" + date "=2015-6-3&api_key=" + apiKey;
       var msg1Object = await fetch(myURL1);
       if (msg1Object.status >= 200 && msg1Object.status <= 299) {            
           var msg1JSONText = await msg1Object.text();
