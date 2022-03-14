@@ -11,7 +11,7 @@ async function mars() {
   
 
       /*var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + StockSymbol + "/company?apiKey=" + apiKey; */
-     var myURL1= "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=" + apikey;
+     var myURL1= "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + date +"/photos?sol=1000&api_key=" + apikey;
       var msg1Object = await fetch(myURL1);
       if (msg1Object.status >= 200 && msg1Object.status <= 299) {            
           var msg1JSONText = await msg1Object.text();
