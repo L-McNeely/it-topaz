@@ -5,31 +5,39 @@ async function mars() {
     if (form.valid()) {
 
       var apiKey = "bOaXlJFFBrdi03C7G5XRd9Bz1wnUcUCEgvK0cD1B"
-      var rover = document.getElementById("rover").value;
+      var rover = "";
+
+      if (document.getElementById("curiosity").checked) {
+        rover =  document.getElementById("curiosity").value;
+      }
+      if (document.getElementById("opportunity").checked) {
+        rover =  document.getElementById("opportunity").value;
+      }
+      if (document.getElementById("spirit").checked) {
+        rover =  document.getElementById("spirit").value;
+      }
+
+
       var date = document.getElementById("date").value;
 
   
 
       /*var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + StockSymbol + "/company?apiKey=" + apiKey; */
-     var myURL1= "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + date + "/photos?sol=1000&api_key=" + apikey;
+     var myURL1= "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?earth_date=" + date + "&api_key=" + apiKey;
       var msg1Object = await fetch(myURL1);
       if (msg1Object.status >= 200 && msg1Object.status <= 299) {            
           var msg1JSONText = await msg1Object.text();
           var msg1 = JSON.parse(msg1JSONText);
           /* Your code to process the result goes here  
         display the returned message */
-        var date = [];
-        var numdays = msg1.results.length;
-        if (numdays > 0) {
-            for (i = 0; i < 25; i++) {
-                var tempdate = new Date(msg1.results[i].t);
+            for (var i = 1; i < 26; i++) {
+              document.getElementById("image" + i).src = msg1.photos[i].img_src;
+              document.getElementById("image" + i).title = msg1.photos[i].camera.full_name;
+              document.getElementById("image" + i).href = msg1.photos[i].img_src;
+                /*var tempdate = new Date(msg1.results[i].t);*/
                 /* extract the date string from the value */
-                stockdate[i] = tempdate.toLocaleDateString();
+                /*stockdate[i] = tempdate.toLocaleDateString();*/
             }
-        }
-        var ctx = document.getElementById("image" + i).src = msg.photos[i].img_src;
-
-
       }
     }
   }  
