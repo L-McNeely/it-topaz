@@ -63,7 +63,13 @@
 
 
   
-  
+  /*add clear+format chart*/
+
+  document.getElementById("Bcur").innerHTML = "";
+  document.getElementById("Ccur").innerHTML = "";
+  document.getElementById("FromDate").value = "";
+  document.getElementById("ToDate").value = "";
+}
   
   $( "#curform" ).validate({
 

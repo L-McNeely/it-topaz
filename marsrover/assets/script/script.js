@@ -31,9 +31,11 @@ async function mars() {
           /* Your code to process the result goes here  
         display the returned message */
             for (var i = 1; i < 26; i++) {
+              
               document.getElementById("image" + i).src = msg1.photos[i].img_src;
               document.getElementById("image" + i).title = msg1.photos[i].camera.full_name;
               document.getElementById("image" + i).href = msg1.photos[i].img_src;
+             /* document.getElementById("image" + i).style.display = 'none';*/
                 /*var tempdate = new Date(msg1.results[i].t);*/
                 /* extract the date string from the value */
                 /*stockdate[i] = tempdate.toLocaleDateString();*/
@@ -41,7 +43,15 @@ async function mars() {
       }
     }
   }  
-  
+  function clearform() {
+    "use strict";
+    /*document.getElementById("rover").value = "";*/
+    document.getElementById("curiosity").checked = false;
+    document.getElementById("opportunity").checked = false;
+    document.getElementById("spirit").checked = false;
+    document.getElementById("date").value = "";
+}
+
   $( "#myform" ).validate({
 
   });
