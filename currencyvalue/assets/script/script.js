@@ -64,7 +64,7 @@
 
   
   /*add clear+format chart*/
-
+function ClearForm() {
   document.getElementById("Bcur").innerHTML = "";
   document.getElementById("Ccur").innerHTML = "";
   document.getElementById("FromDate").value = "";

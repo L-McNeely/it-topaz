@@ -30,16 +30,29 @@ async function mars() {
           var msg1 = JSON.parse(msg1JSONText);
           /* Your code to process the result goes here  
         display the returned message */
-            for (var i = 1; i < 26; i++) {
+        for (var i = 1; i < 26; i++) {
+            document.getElementById("image" + i).style.display = 'none';
+        }
+
+        var numphotos = msg1.photos.length;
+        document.getElementById("numphotos").innerHTML = msg1.photos.length + " photos found";
+        if (numphotos > 25) {
+          numphotos = 25
+        }
+
+        if (numphotos > 0) {
+          for (var i = 1; i < numphotos+1; i++) {
               
               document.getElementById("image" + i).src = msg1.photos[i].img_src;
               document.getElementById("image" + i).title = msg1.photos[i].camera.full_name;
-              document.getElementById("image" + i).href = msg1.photos[i].img_src;
-             /* document.getElementById("image" + i).style.display = 'none';*/
+              document.getElementById("anchor" + i).href = msg1.photos[i].img_src;
+              document.getElementById("image" + i).style.display = 'inline';
+              /* document.getElementById("image" + i).style.display = 'none';*/
                 /*var tempdate = new Date(msg1.results[i].t);*/
                 /* extract the date string from the value */
                 /*stockdate[i] = tempdate.toLocaleDateString();*/
             }
+        }
       }
     }
   }  
@@ -50,6 +63,9 @@ async function mars() {
     document.getElementById("opportunity").checked = false;
     document.getElementById("spirit").checked = false;
     document.getElementById("date").value = "";
+    for (var i = 1; i < 26; i++) {
+      document.getElementById("image" + i).style.display = 'none';
+    }
 }
 
   $( "#myform" ).validate({
