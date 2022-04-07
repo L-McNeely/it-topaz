@@ -1,4 +1,6 @@
-async function GetData() {
+async function GetData() 
+{
+    "use strict";
     var myURL = "https://waterservices.usgs.gov/nwis/iv/?format=json&indent=on&sites=07055646,07055660,07055680,07055780&period=P7D&parameterCd=00065&siteStatus=active";
     var msgObject = await fetch(myURL);
     var msgJSONText = await msgObject.text();
