@@ -6,10 +6,8 @@ async function GetData() {
     document.getElementById("msg").innerHTML = msgJSONText;
     var dates = [];
     var values = [];
-    
-    /* Site 1 */
-    /* fLen contains the length of the array (number of values) */
-    fLen = msg.value.timeSeries[0].values[0].value.length
+
+    var fLen = msg.value.timeSeries[0].values[0].value.length
     for (i = 0; i < fLen; i++) {
         values[i] = msg.value.timeSeries[0].values[0].value[i].value
         dates[i] = msg.value.timeSeries[0].values[0].value[i].dateTime
